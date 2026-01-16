@@ -97,3 +97,11 @@ document.querySelectorAll('.fragrance-options').forEach(group => {
     item.classList.add('active');
   });
 });
+
+// Lazy load images with fade-in effect
+document.querySelectorAll('img[loading="lazy"]').forEach(img => {
+  img.addEventListener('load', () => {
+    img.classList.add('loaded');
+  });
+});
+
